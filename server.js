@@ -1,5 +1,4 @@
 var express = require("express");
-var path = require("path");
 var passport = require("passport");
 var session = require("express-session");
 var exphbs = require("express-handlebars");
@@ -43,7 +42,3 @@ db.sequelize.sync().then(function() {
 		console.log("App listening on http://localhost:" + PORT);
 	});
 });
-
-// app.listen(PORT, function() {
-// 	console.log("App listening on http://localhost:" + PORT);
-// });
